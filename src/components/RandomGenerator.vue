@@ -97,7 +97,7 @@
                 <label for="鱼粉！">鱼粉！</label>
                 <input type="checkbox" id="food" value="麻辣烫！" v-model="checkedNames" />
                 <label for="麻辣烫！">麻辣烫！</label>
-                <input type="checkbox" id="food" value="炒饭！" v-model="checkedNames" />
+                <input type="checkbox" id="food" value="拌饭！" v-model="checkedNames" />
                 <label for="拌饭！">拌饭！</label>
                 <input type="checkbox" id="food" value="猪肚鸡！" v-model="checkedNames" />
                 <label for="猪肚鸡！">猪肚鸡！</label>
