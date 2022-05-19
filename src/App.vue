@@ -2,6 +2,8 @@
 <div class="container">
 <main>
 <RandomGenerator />
+<Header/>
+
 <!-- <RandomGenerator /> -->
 
 </main>
@@ -10,7 +12,7 @@
 
 
 <script setup>
-// TODO: 这里push 的时候要选择 git push -u secondorigin "master" 才可以！
+// TODO: 这里push 的时候要选择 git push -u origin2 "main" 才可以！
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 // import HelloWorld from "./components/HelloWorld.vue";
@@ -22,7 +24,7 @@ import RandomGenerator from './components/RandomGenerator.vue';
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Tahoma,Helvetica,Arial,'宋体',sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
