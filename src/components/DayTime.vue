@@ -1,6 +1,6 @@
 
 <template>
-  <div>{{ dateYear }} {{ dateDay }} {{ dateWeek }}</div>
+  <div style = "height:40px;  margin-top:5px">{{ dateYear }} {{ dateDay }} {{ dateWeek }}</div>
 </template>
 
 
