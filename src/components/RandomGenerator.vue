@@ -31,6 +31,7 @@
             
             <br />
             <div class = "mainDiv">
+                <span id = "guide">可以去这些地方！</span>
                 <el-checkbox-group v-model="checkedNames" size="large">
                     <template v-for="(city, i) in locations" :key="city">
                         <div v-if="i % 4 == 0 && i != 0">
@@ -45,6 +46,7 @@
             <br />
             <br />
             <div class = "subDiv">
+            <span id = "guide">四十！</span>
                 <el-checkbox-group v-model="checkedNames" size="large">
                     <template v-for="(city, i) in forty" :key="city">
                         <div v-if="i % 4 == 0 && i != 0">
@@ -69,6 +71,7 @@
             <br />
             <br />
             <div class = "subDiv">
+            <span id = "guide">五十！</span>
                 <el-checkbox-group v-model="checkedNames" size="large">
                     <template v-for="(city, i) in fifty" :key="city">
                         <div v-if="i % 4 == 0 && i != 0">
@@ -94,6 +97,7 @@
             <br />
             <br />
             <div class = "subDiv">
+            <span id = "guide">九十！</span>
                 <el-checkbox-group v-model="checkedNames" size="large">
                     <template v-for="(city, i) in ninty" :key="city">
                         <div v-if="i % 4 == 0 && i != 0">
@@ -119,6 +123,7 @@
             <br />
             <br />
             <div class = "subDiv">
+            <span id = "guide">去外面吃！</span>
                 <el-checkbox-group v-model="checkedNames" size="large">
                     <template v-for="(city, i) in outside" :key="city">
                         <div v-if="i % 4 == 0 && i != 0">
@@ -139,3 +144,26 @@
 
 <script src = "../js/RandomGenerator.js">
 </script>
+
+<style lang="scss" scoped>
+.subDiv{
+    border : 2px solid #c0c0c0;
+    #guide{
+        font-size:10px;
+        color : #c0c0c0;
+        padding-left : 5px;
+        padding-top:5px;
+    }
+}
+
+.mainDiv{
+border : 1px solid #c0c0c0;
+    #guide{
+        font-size:10px;
+        color : #c0c0c0;
+        margin-left : 5px;
+        margin-top:5px;
+    }
+}
+
+</style>

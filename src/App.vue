@@ -5,13 +5,9 @@
 <RandomGenerator />
 <Header/>
 
-
-<!-- <RandomGenerator /> -->
-
 </main>
 </div>
 </template>
-
 
 <script setup>
 // TODO: 这里push 的时候要选择 git push -u origin2 "main" 才可以！
@@ -31,5 +27,6 @@ import DayTimeVue from './components/DayTime.vue';
   text-align: center;
   color: #2c3e50;
   margin-top: 30px;
+  margin-bottom: 50px;
 }
 </style>
