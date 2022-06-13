@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "dat.gui": "^0.7.9",
+    "dayjs": "^1.11.3",
     "vue": "^3.2.25"
   },
   "devDependencies": {

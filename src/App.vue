@@ -1,8 +1,10 @@
 <template>
 <div class="container">
 <main>
+<DayTimeVue />
 <RandomGenerator />
 <Header/>
+
 
 <!-- <RandomGenerator /> -->
 
@@ -18,10 +20,10 @@
 // import HelloWorld from "./components/HelloWorld.vue";
 // import Header from "./components/Header.vue"
 import RandomGenerator from './components/RandomGenerator.vue';
+import DayTimeVue from './components/DayTime.vue';
 // import RandomGenerator from './components/RandomGenerator.vue';
 
 </script>
-
 <style>
 #app {
   font-family: Tahoma,Helvetica,Arial,'宋体',sans-serif;
