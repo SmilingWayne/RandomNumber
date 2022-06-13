@@ -21,7 +21,6 @@
 // import Header from "./components/Header.vue"
 import RandomGenerator from './components/RandomGenerator.vue';
 import DayTimeVue from './components/DayTime.vue';
-// import RandomGenerator from './components/RandomGenerator.vue';
 
 </script>
 <style>

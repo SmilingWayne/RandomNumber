@@ -2,11 +2,11 @@
 <div id = "randomNumber" class = "demo3">
         <div id="v-model-multiple-checkboxes">
             <div class = "show">
-            <h1>购物车</h1>
+            <h1>🛒🛒</h1>
             <div v-if="checkedNames.length > 0">
                 <ul>
                     <template v-for="item in checkedNames"  v-model="checkedNames">
-                      <button  @click = "deleteMessage(item)"> {{ item }} </button>
+                      <el-button tyle = "info"  @click = "deleteMessage(item)"> {{ item }} </el-button>
                     </template>
                   </ul>
             </div>
@@ -15,18 +15,16 @@
             </div>
             </div>
             <div>
-                <!-- <span>Checked names: {{ checkedNames }}</span> -->
-                <form v-on:submit.prevent="pushBack">
+                <el-form v-on:submit.prevent="pushBack">
                     <label for="new-todo">增加选项：</label>
-                    <input v-model="checkedNamesInput" id="new-todo" placeholder="E.g. 方！糕！" />
+                    <el-input style = "width: auto" v-model="checkedNamesInput" id="new-todo" placeholder="E.g. 方！糕！" />
                     <span> </span>
-                    <!-- <br /> -->
-                    <button>Add</button>
-                </form>
-
+                    <el-button style = "margin-left:20px" @click="pushBack">加入！</el-button>
+                </el-form>
+                <br />
                 <div>
-                    <button @click="clearAll">清空</button>
-                    <button @click="randomChoice">选！</button> 
+                    <el-button type = "primary" @click="clearAll">清空</el-button>
+                    <el-button type = "success" @click="randomChoice">选！</el-button> 
                 </div>
 
             </div>
