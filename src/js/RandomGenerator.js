@@ -11,7 +11,6 @@ export default {
           fifty: ["羊肉面！🍜","椒麻鸡！🐔","烤鸭饭！🦆","辛拉面！🍜","水饺！🥟","炒饭！🍘","营养汤！🥣", "米线！🍜"],
           outside : ["黄焖鸡！🐔","戴小姐！🍕","饼！🥞","杨国福！🌶️","风铃巷！🥟","麦当当！🍟", "西安面馆！🍜", "鸡手王🍖"],
         }
-        
       },
       computed :{
         sliceList() {
@@ -51,6 +50,11 @@ export default {
           },
           clearAll(){
               this.checkedNames = [] 
+          },
+          randomTwo(){
+            const ANSW = ["Yes!😄", "No!😭"]
+            var t = ANSW[Math.floor(Math.random() * 2)]
+            alert(t);
           },
           randomChoice(){
               console.log(this.checkedNames.length )

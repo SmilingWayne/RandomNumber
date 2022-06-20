@@ -1,12 +1,14 @@
 <template>
 <div class="container">
-<main>
-<DayTimeVue/>
-<RandomGenerator />
-<Header/>
+  <main>
+  <!-- <SlidingVue /> -->
+     <DayTimeVue/> 
+    <RandomGenerator /> 
+  <!-- <Header/> -->
 
-</main>
-</div>
+  <!-- <KeyBoardVue /> -->
+  </main>
+  </div>
 </template>
 
 <script setup>
@@ -17,6 +19,8 @@
 // import Header from "./components/Header.vue"
 import RandomGenerator from './components/RandomGenerator.vue';
 import DayTimeVue from './components/DayTime.vue';
+import SlidingVue from './components/Sliding.vue';
+// import KeyBoardVue from './components/KeyBoard.vue';
 
 </script>
 <style>
@@ -28,5 +32,6 @@ import DayTimeVue from './components/DayTime.vue';
   color: #2c3e50;
   margin-top: 30px;
   margin-bottom: 50px;
+
 }
 </style>
