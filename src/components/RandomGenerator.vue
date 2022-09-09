@@ -68,14 +68,6 @@
                         </template>
                     </el-checkbox-group>       
             </div>
-        <!-- <div>
-          Operation feedback: enable the users to clearly perceive their
-          operations by style updates and interactive effects;
-        </div>
-        <div>
-          Visual feedback: reflect current state by updating or rearranging
-          elements of the page.
-        </div> -->
       </el-collapse-item>
       <el-collapse-item title="五十有啥" name="3">
         <div class = "subDiv">
@@ -101,7 +93,7 @@
       <el-collapse-item title="九十有啥" name="4">
         <div class = "subDiv">
             <el-checkbox-group v-model="checkedNames" size="large">
-                <template v-for = "(city, i) in sliceList(ninty, 2)" :key="i">
+                <template v-for = "(city, i) in sliceList(Foods.ninty, 2)" :key="i">
                     <el-row class="row-bg" justify="space-evenly">
                             <el-col :span = "10">
                                 <el-checkbox :label="city[0]" :id = "forID(city[0])" border >
@@ -143,93 +135,6 @@
     </el-collapse>
             
             <br />
-           <!-- <div class = "subDiv">
-                <br />
-                    <el-checkbox-group v-model="checkedNames" size="large">
-                        <template v-for = "(city, i) in sliceList(locations, 2)" :key="i">
-                            <el-row class="row-bg" justify="space-evenly">
-                                    <el-col :span = "10">
-                                        <el-checkbox :label="city[0]" :id = "forID(city[0])" border >
-                                            {{ city[0] }}
-                                        </el-checkbox>
-                                    </el-col>
-                                    <el-col :span = "10" :offset = "3">
-                                        <el-checkbox :label="city[1]" :id = "forID(city[1])" border >
-                                            {{ city[1] }}
-                                        </el-checkbox>
-                                    </el-col>
-                            </el-row>
-                        </template>
-                    </el-checkbox-group>       
-            </div> -->
-            <!-- <br />
-            <br /> -->
-            <!-- <div class = "subDiv">
-           
-                
-                <br />
-                    <el-checkbox-group v-model="checkedNames" size="large">
-                        <template v-for = "(city, i) in sliceList(forty, 2)" :key="i">
-                            <el-row class="row-bg" justify="space-evenly">
-                                    <el-col :span = "10">
-                                        <el-checkbox :label="city[0]" :id = "forID(city[0])" border >
-                                            {{ city[0] }}
-                                        </el-checkbox>
-                                    </el-col>
-                                    <el-col :span = "10" :offset = "3">
-                                        <el-checkbox :label="city[1]" :id = "forID(city[1])" border >
-                                            {{ city[1] }}
-                                        </el-checkbox>
-                                    </el-col>
-                            </el-row>
-                        </template>
-                    </el-checkbox-group>       
-            </div> -->
-            <!-- <br />
-            <br /> -->
-             <!-- <div class = "subDiv">
-           
-                
-                <br />
-                    <el-checkbox-group v-model="checkedNames" size="large">
-                        <template v-for = "(city, i) in sliceList(fifty, 2)" :key="i">
-                            <el-row class="row-bg" justify="space-evenly">
-                                    <el-col :span = "10">
-                                        <el-checkbox :label="city[0]" :id = "forID(city[0])" border >
-                                            {{ city[0] }}
-                                        </el-checkbox>
-                                    </el-col>
-                                    <el-col :span = "10" :offset = "3">
-                                        <el-checkbox :label="city[1]" :id = "forID(city[1])" border >
-                                            {{ city[1] }}
-                                        </el-checkbox>
-                                    </el-col>
-                            </el-row>
-                        </template>
-                    </el-checkbox-group>       
-            </div>
-           -->
-            <!-- <br />
-            <br /> -->
-            <!-- <div class = "subDiv">
-                <br />
-                    <el-checkbox-group v-model="checkedNames" size="large">
-                        <template v-for = "(city, i) in sliceList(ninty, 2)" :key="i">
-                            <el-row class="row-bg" justify="space-evenly">
-                                    <el-col :span = "10">
-                                        <el-checkbox :label="city[0]" :id = "forID(city[0])" border >
-                                            {{ city[0] }}
-                                        </el-checkbox>
-                                    </el-col>
-                                    <el-col :span = "10" :offset = "3">
-                                        <el-checkbox :label="city[1]" :id = "forID(city[1])" border >
-                                            {{ city[1] }}
-                                        </el-checkbox>
-                                    </el-col>
-                            </el-row>
-                        </template>
-                    </el-checkbox-group>       
-            </div> -->
             <br />
             <br />
             
