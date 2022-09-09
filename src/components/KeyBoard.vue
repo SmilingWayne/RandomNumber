@@ -75,8 +75,9 @@ export default {
         current_press : [],        
     };
   },
+  
   created() {
-    var that = this;
+    // var that = this;
     //当前页面监视键盘输入
     
     document.onkeydown = function(e) {
@@ -85,7 +86,6 @@ export default {
         console.log(key + "Down")
         var btn = document.getElementById("Id" + key)
         btn.style.backgroundColor = "red"
-    //   e.preventDefault();
     }
     document.onkeyup = function(e){
         const aux = ["192", "20", "16", "18", "17","91", "8", "22"]
@@ -111,31 +111,33 @@ export default {
         
     }
   },    
-  mounted() {
-   
+  mounted(){},
+  methods : {},
+  unmounted() {
+    console.log("STOPPPPP!")
+    document.onkeydown = null;
+    document.onkeyup = null;
   },
-  methods : {
-  
-  }
+ 
 };
 
 
 </script>
 
+   
 <style lang="css">
-    *{
+
+    body{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-    }
-    body{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        
     }
     .keyboard-base{
-        min-width: 1085px;
+        min-width: 1000px;
         padding: 20px;
         background-color: rgb(56, 56, 56);
         border-radius: 10px;

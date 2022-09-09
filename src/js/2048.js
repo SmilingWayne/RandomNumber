@@ -45,7 +45,7 @@ function drawGrid() {
     let w = 100;
     for (let i = 0; i < 4; i++) {
         for (let j = 0; j < 4; j++) {
-            // rect(i * w, j * w, w, w);
+            
             noFill();
             strokeWeight(2);
             stroke(0)
