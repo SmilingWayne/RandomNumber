@@ -24,12 +24,12 @@
                 <br />
                 <div>
                     <el-button type = "primary" plain @click="clearAll">清空</el-button>
-                    <el-button type = "success" plain @click="randomChoice">选！</el-button> 
+                    <!-- <el-button type = "success" plain @click="randomChoice">选！</el-button>  -->
                     <el-button type = "primary" plain @click="randomTwo">去不去！</el-button> 
                 </div>
 
             </div>
-            <div style = "text-align: center, position: relative">
+            <div class = "roll">
                 <RollingBoard  ref="child"  text-align="center" margin="auto"></RollingBoard>
             </div>
     <br />
@@ -164,6 +164,12 @@
   
 }
 
+.roll {
+    margin: 100px auto;
+    display: flex;
+    justify-content: center; /*水平方向的居中*/
+    align-items: center; /*垂直方向的居中*/
+}
 .el-button{
     margin : 5px;
 }

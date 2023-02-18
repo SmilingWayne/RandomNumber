@@ -13,7 +13,7 @@
     router>
   <el-menu-item index="/">首页</el-menu-item>
   <el-menu-item index="/RandomGenerator">吃啥好呢</el-menu-item>
-  <el-menu-item index="/">Vacant</el-menu-item>
+  <el-menu-item index="/">吃在南哪</el-menu-item>
   </el-menu>
 
   <router-view></router-view>

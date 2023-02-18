@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  
+
   data () {
     return {
       blocks: [{ padding: '13px', background: '#617df2' }],

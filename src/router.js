@@ -5,7 +5,7 @@ const router = createRouter({
             name:"MainPage",
             path:"/",
             
-            'component':()=>import("./components/MainPage.vue")
+            'component':()=>import("./components/RandomGenerator.vue")
         },
         {
             name:"keyboard",
