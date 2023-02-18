@@ -1,5 +1,9 @@
+import RollingBoard from '../components/RollingBoard.vue';
 export default {
     name : "HelloVueApp",
+    components: { 
+        RollingBoard
+     },
     data() {
         return { 
           checkedNames: [],
@@ -49,6 +53,13 @@ export default {
           pushBack(){
             if (this.checkedNamesInput != null){
                 this.checkedNames.push(this.checkedNamesInput)
+                // this.$refs.child.prizes.append({})
+                if(this.$refs.child.prizes.length % 2 == 0){
+                  this.$refs.child.prizes.push({ fonts: [{ text: this.checkedNamesInput, top: '10%' , fontSize: "24pt"}], background: '#e9e8fe' })
+                }
+                else{
+                  this.$refs.child.prizes.push({ fonts: [{ text: this.checkedNamesInput, top: '10%' , fontSize: "24pt" }], background: '#b8c5f2' })
+                }
                 this.checkedNamesInput = ''
             }
           },
@@ -59,12 +70,16 @@ export default {
               for(var i = 0; i < this.checkedNames.length; i ++ ){
                   if(this.checkedNames[i] == arget){
                       this.checkedNames.splice(i, 1)
+                      this.$refs.child.prizes.splice(i,1)
                       break;
                   }
               }
           },
           clearAll(){
               this.checkedNames = [] 
+              while(this.$refs.child.prizes.length > 0){
+                this.$refs.child.prizes.splice(0,1)
+              }
           },
           randomTwo(){
             const ANSW = ["Yes!😄", "No!😭"]

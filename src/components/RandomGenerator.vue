@@ -29,6 +29,9 @@
                 </div>
 
             </div>
+            <div style = "text-align: center, position: relative">
+                <RollingBoard  ref="child"  text-align="center" margin="auto"></RollingBoard>
+            </div>
     <br />
 
     <div>
